@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body class="recipe-page">
+    <header class="detail-hero">
+        <button class="back-button" data-back>
+            ← Back to recipes
+        </button>
+        <div class="detail-hero__content">
+            <p class="detail-hero__category" id="recipeCategory">Category</p>
+            <h1 id="recipeTitle">Loading...</h1>
+            <p id="recipeDescription" class="detail-hero__description"></p>
+        </div>
+        <div class="detail-hero__image-wrapper">
+            <img id="recipeImage" src="" alt="Recipe image">
+        </div>
+    </header>
+
+    <main class="detail-content">
+        <section class="card">
+            <h2>Ingredients</h2>
+            <ul id="ingredientList" class="list"></ul>
+        </section>
+        <section class="card">
+            <h2>Steps</h2>
+            <ol id="stepList" class="list list--numbered"></ol>
+        </section>
+    </main>
+
+    <script src="scripts/app.js" defer></script>
+    <script src="scripts/recipe.js" defer></script>
+</body>
+
+</html>
+
